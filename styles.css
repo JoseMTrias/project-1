@@ -28,14 +28,6 @@ body {
   z-index: 5;
 }
 
-.header_text {
-  color: black;
-}
-
-.header_heading {
-  margin: 0;
-}
-
 .footer {
   background: white;
   color: black;
@@ -47,6 +39,10 @@ body {
   border: 5px;
   border-style: solid;
   border-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -91,11 +87,7 @@ body {
   gap: 10px;
 }
 
-* p {
-  margin: 20px 10%;
-  border: 5px solid black;
-  padding: 3% 10%;
-  scroll-margin-top: 100px;
-  position: relative;
-  z-index: 3;
+.footer_button {
+  background-color: white;
+  border: none;
 }
