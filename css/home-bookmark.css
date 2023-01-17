@@ -1,0 +1,42 @@
+.card {
+  margin: 20px 10%;
+  border: 5px solid black;
+  padding: 3% 5%;
+  scroll-margin-top: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_heading {
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+.card_answer {
+  margin: 50px 0px;
+  background-color: white;
+  align-content: center;
+  width: fit-content;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.bookmark {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  background-color: white;
+}
+
+.bookmark_button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.tags {
+  align-self: flex-start;
+}
