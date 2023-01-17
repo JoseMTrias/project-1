@@ -128,7 +128,7 @@ footer .active {
 .counter {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 90px;
 }
 
 .settings {
