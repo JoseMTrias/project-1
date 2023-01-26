@@ -18,13 +18,27 @@ submitButton.addEventListener('submit', (event) => {
   newCard.append(newCardHeading);
 
   const newCardAnswer = document.createElement('button');
+  newCardAnswer.addEventListener('click', () => {
+    if (newCardAnswer.textContent === 'Show Answer') {
+      newCardAnswer.textContent = 'Hide Answer';
+    } else {
+      newCardAnswer.textContent = 'Show Answer';
+    }
+  });
   newCardAnswer.classList.add('card_answer');
   newCardAnswer.textContent = 'Show Answer';
   newCard.append(newCardAnswer);
 
+  // continue between here
+
   const newCardAnswerText = document.createElement('p');
-  newCardAnswerText.classList.add('hidden');
+  newCardAnswerText.addEventListener('click', () => {
+    // newCardAnswerText.classList.toggle('hidden');
+    newCardAnswerText.textContent = data.yourAnswer;
+  });
   newCard.append(newCardAnswerText);
+
+  // and here
 
   const newCardBookmark = document.createElement('div');
   newCardBookmark.classList.add('bookmark');
