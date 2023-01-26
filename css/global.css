@@ -50,9 +50,9 @@
   border: none;
 }
 
-footer .active {
+/* footer .active {
   background-color: lightgray;
-}
+} */
 
 body {
   display: flex;
@@ -60,4 +60,8 @@ body {
   margin: 80px 0 90px 0;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 0;
+}
+
+.hidden {
+  display: none;
 }

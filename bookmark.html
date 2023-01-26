@@ -14,24 +14,26 @@
     </header>
     <main>
 
-        <section class="card">
-            <div class="flex-container"></div>
-            <h2 class="card_heading">
-              How long do you need to became a kick-ass developer?
-            </h2>
-            <button class="card_answer">Show Answer</button>
-            <div class="bookmark">
-                <button class="bookmark_button">
-                  <img
-                  src="https://img.icons8.com/material-rounded/48/000000/bookmark-ribbon--v1.png"
-                  aria-label="bookmark"/>
-                </button>
-              </div>
-              <div class="tags">
-                <button>#skills</button>
-                <button>#motivation</button>
-              </div>
-          </section>
+      <section class="card">
+        <h2 class="card_heading">
+          What property flips the axes in flexbox?
+        </h2>
+        <button class="card_answer" data-js="card_answer_button">Show Answer</button>
+        <div class="bookmark">
+          <button class="bookmark_button first" data-js="bookmark_button">
+            <img
+              src="./assets/bookmark_filled.png" 
+              data-js="bookmark_icon" 
+              aria-label="bookmark_empty">
+            </img>
+          </button>
+        </div>
+        <div class="tags">
+          <button>#html</button>
+          <button>#flexbox</button>
+          <button>#css</button>
+        </div>
+      </section>
 
 
     </main>
@@ -39,20 +41,28 @@
     <footer class="footer">
         <button class="footer_button_home">
             <a href="index.html">
-                <img src="https://img.icons8.com/sf-regular/48/000000/home-page.png"
+                <img src="assets/home.png"
                 aria-label="home"/>
             </a>
         </button>
         <button class="footer_button_bookmark active">
             <img
-              src="https://img.icons8.com/material/48/000000/bookmark-outline.png"
+              src="assets/bookmark_filled.png"
               aria-label="bookmark">
             </img>
             <link rel="bookmark" href="bookmark.html">
         </button>
+        <button class="footer_button_add">
+          <a href="form.html" aria-label="add">
+            <img
+            src="assets/add_new.png" 
+            aria-label="add">
+          </img>
+          </a>
+        </button>
         <button class="footer_button_profile">
             <a href="profile.html">
-                <img src="https://img.icons8.com/ios/50/000000/james-brown.png"
+                <img src="assets/james.png"
                 aria-label="profile">
             </a>
         </button>
