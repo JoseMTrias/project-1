@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Profile page">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="js/form.js" defer></script>
+
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header_heading">Quiz App</h1>
+    </header>
+    <main>
+      <section class="card">
+        <form data-js="form">
+          <label for="your-question">Your question:</label>
+          <textarea 
+          id="your-question" 
+          name="yourQuestion" 
+          rows="4" 
+          cols="10"
+          required
+          maxlength="150"
+          ></textarea>
+          <small class="form__character-count">(<span data-js="amountLeft1">
+          </span>&nbsp;characters left)</small>
+          <label for="your-answer">Your answer:</label>
+          <textarea 
+          id="your-answer" 
+          name="yourAnswer" 
+          rows="4" 
+          cols="10"
+          required
+          maxlength="150"
+          ></textarea>
+          <small class="form__character-count">(<span data-js="amountLeft2">
+          </span>&nbsp; characters left)</small>
+          <label for="tags">Tag:</label>
+          <input type="text" id="tags" name="tags" required>
+          <button type="submit" class="submit_button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <button class="footer_button_home">
+            <a href="index.html">
+                <img src="assets/home.png"
+                aria-label="home"/>
+            </a>
+        </button>
+        <button class="footer_button_bookmark">
+            <a href="bookmark.html">
+                <img
+                src="assets/bookmark.png"
+                aria-label="bookmark">
+              </img>
+              </a>
+        </button>
+        <button class="footer_button_add active">
+            <a href="form.html" aria-label="add">
+              <img
+              src="assets/add_filled_new.png" 
+              aria-label="add">
+            </img>
+            </a>
+          </button>
+        <button class="footer_button_profile">
+            <a href="profile.html">
+                <img src="assets/james.png"
+                aria-label="profile">
+            </a>
+        </button>
+    </footer>
+  </body>
+</html>

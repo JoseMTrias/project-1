@@ -1,0 +1,32 @@
+.footer_button_add {
+  background-color: white;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  width: 100%;
+  gap: 10px;
+}
+
+.card {
+  margin: 20px 10%;
+  border: 5px solid black;
+  padding: 3% 5%;
+  scroll-margin-top: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit_button {
+  margin-top: 10px;
+}
+
+.form__character-count {
+  display: flex;
+  justify-content: right;
+}

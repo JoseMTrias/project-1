@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Profile page">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="js/profile.js" defer></script>
+
   </head>
   <body>
     <header class="header">
       <h1 class="header_heading">Quiz App</h1>
     </header>
     <main>
-        <section class="profile">
+        <section id="profile">
             <img src="https://img.icons8.com/ios-filled/100/000000/james-brown.png"
             aria-label="profile_pic"/>
             <h2>James Brown</h2>
@@ -37,41 +39,45 @@
                     <img src="https://img.icons8.com/small/32/null/filled-bookmark-ribbon.png"
                     aria-label="button_counter_bookmark"/>4
                 </a>
-              
         </section>
 
         <section class="settings">
             <h2>Settings</h2>
             <h3 class="Dark_Mode">Dark Mode
                 <label class="switch">
-                    <input type="checkbox" aria-label="checkbox">
+                    <input data-js="switchButton" type="checkbox" aria-label="checkbox">
                     <span class="slider round"></span>
                 </label>
             </h3>
-           
         </section>
-
-    
     </main>
 
     <footer class="footer">
         <button class="footer_button_home">
             <a href="index.html">
-                <img src="https://img.icons8.com/sf-regular/48/000000/home-page.png"
+                <img src="assets/home.png"
                 aria-label="home"/>
             </a>
         </button>
         <button class="footer_button_bookmark">
             <a href="bookmark.html">
                 <img
-                src="https://img.icons8.com/material/48/000000/bookmark-outline.png"
+                src="assets/bookmark.png"
                 aria-label="bookmark">
               </img>
               </a>
         </button>
+        <button class="footer_button_add">
+            <a href="form.html" aria-label="add">
+              <img
+              src="assets/add_new.png" 
+              aria-label="add">
+            </img>
+            </a>
+          </button>
         <button class="footer_button_profile active">
             <a href="profile.html">
-                <img src="https://img.icons8.com/ios/50/000000/james-brown.png"
+                <img src="assets/james_filled.png"
                 aria-label="profile">
             </a>
         </button>
