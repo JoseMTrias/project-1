@@ -2,7 +2,7 @@ const submitButton = document.querySelector('[data-js="form"]');
 
 submitButton.addEventListener('submit', (event) => {
   event.preventDefault();
-  console.log('yeah');
+  // console.log('yeah');
 
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
@@ -35,6 +35,15 @@ submitButton.addEventListener('submit', (event) => {
   newCardBookmark.append(newCardBookmarkButton);
 
   const newCardBookmarkButtonImage = document.createElement('img');
+  newCardBookmarkButtonImage.addEventListener('click', () => {
+    if (newCardBookmarkButtonImage.src.endsWith('assets/bookmark.png')) {
+      newCardBookmarkButtonImage.src = 'assets/bookmark_filled.png';
+    } else if (
+      newCardBookmarkButtonImage.src.endsWith('assets/bookmark_filled.png')
+    ) {
+      newCardBookmarkButtonImage.src = 'assets/bookmark.png';
+    }
+  });
   newCardBookmarkButtonImage.src = '/assets/bookmark.png';
   newCardBookmarkButton.append(newCardBookmarkButtonImage);
 
