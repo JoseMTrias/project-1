@@ -47,6 +47,9 @@ submitButton.addEventListener('submit', (event) => {
   newCardTag.append(newCardTagButton);
 
   event.target.reset();
+  amountLeft1.textContent = maxLength;
+  amountLeft2.textContent = maxLength;
+  submitButton.elements.yourQuestion.focus();
 });
 
 console.clear();
