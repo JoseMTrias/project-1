@@ -24,6 +24,7 @@ submitButton.addEventListener('submit', (event) => {
     } else {
       newCardAnswer.textContent = 'Show Answer';
     }
+    newCardAnswerText.classList.toggle('hidden');
   });
   newCardAnswer.classList.add('card_answer');
   newCardAnswer.textContent = 'Show Answer';
@@ -32,10 +33,8 @@ submitButton.addEventListener('submit', (event) => {
   // continue between here
 
   const newCardAnswerText = document.createElement('p');
-  newCardAnswerText.addEventListener('click', () => {
-    // newCardAnswerText.classList.toggle('hidden');
-    newCardAnswerText.textContent = data.yourAnswer;
-  });
+  newCardAnswerText.classList.add('hidden');
+  newCardAnswerText.textContent = data.yourAnswer;
   newCard.append(newCardAnswerText);
 
   // and here
